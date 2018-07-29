@@ -1693,3 +1693,10 @@ SyntaxError (/home/lsivak/web-service-objects-readme-v-000/app/controllers/searc
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.4ms)
+
+
+Started GET "/friends" for 74.108.39.105 at 2018-07-29 22:30:31 +0000
+Cannot render console from 74.108.39.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#friends as HTML
+  Rendered searches/friends.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 95ms (Views: 18.9ms | ActiveRecord: 0.0ms)
