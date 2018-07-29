@@ -1771,3 +1771,15 @@ AbstractController::ActionNotFound (The action 'foursquare' could not be found f
 
 
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.0ms)
+
+
+Started POST "/search" for 74.108.39.105 at 2018-07-29 22:34:18 +0000
+Cannot render console from 74.108.39.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k//ci0XpXHihrMABoUqbHlBpy4Uq6BV06QqKH4rzGFFMKF3xMAppnfXxz545hpM4ZqHgmGaImh/ug4tNxzRQ3g==", "zipcode"=>"06807", "commit"=>"Search!"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `search' for #<FoursquareService:0x007fd8ce37b960>):
+  app/controllers/searches_controller.rb:13:in `foursquare'
+
+
